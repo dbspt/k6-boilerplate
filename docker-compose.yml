@@ -10,7 +10,7 @@ services:
     image: prom/prometheus:v2.55.0
     command:
       - --config.file=/etc/prometheus/prometheus.yml
-      - --web.enable-remote-write-receiver.      # abre a porta de entrada para receber o que o k6 envia;
+      - --web.enable-remote-write-receiver       # abre a porta de entrada para receber o que o k6 envia;
       - --enable-feature=native-histograms
       - --storage.tsdb.retention.time=7d         # apaga os dados com mais de 7 dias.
     volumes:
