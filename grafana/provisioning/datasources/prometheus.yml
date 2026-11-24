@@ -1,0 +1,10 @@
+apiVersion: 1                    # versão do formato do arquivo (sempre 1)
+datasources:
+  - name: Prometheus             # nome que aparece na tela
+    uid: prometheus              # identificador fixo; o painel .json aponta para ele
+    type: prometheus             # tipo de fonte
+    access: proxy                # o servidor do Grafana faz a consulta, não o seu navegador
+    url: http://prometheus:9090  # endereço do Prometheus dentro da rede do Docker
+    isDefault: true              # fonte padrão para painéis novos
+    jsonData:
+      timeInterval: 5s           # avisa ao Grafana que os dados chegam a cada 5 s

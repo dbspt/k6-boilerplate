@@ -1,0 +1,7 @@
+apiVersion: 1
+providers:
+  - name: quickpizza
+    folder: QuickPizza Lab              # pasta onde o painel aparece no menu Dashboards
+    type: file                          # painéis lidos de arquivos
+    options:
+      path: /var/lib/grafana/dashboards # pasta, dentro do contêiner, com os .json
