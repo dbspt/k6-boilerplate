@@ -20,9 +20,9 @@ export const options = {
     total_compartilhado: {
       executor: 'shared-iterations',
       vus: 5,               // 5 usuários dividem...
-      iterations: 50,       // ...50 iterações no total
+      iterations: 500,       // ...50 iterações no total
       maxDuration: '1m',    // teto de segurança (padrão: 10m)
-    },
+    }
   },
   thresholds: {
     checks: ['rate>0.99'],

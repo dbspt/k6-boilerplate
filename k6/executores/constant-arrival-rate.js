@@ -18,9 +18,9 @@ export const options = {
   scenarios: {
     vazao_fixa: {
       executor: 'constant-arrival-rate',
-      rate: 10,             // 10 iterações...
+      rate: 20,             // 10 iterações...
       timeUnit: '1s',       // ...por segundo
-      duration: '30s',
+      duration: '15s',
       preAllocatedVUs: 5,   // usuários criados no início
       maxVUs: 20,           // teto: se faltar usuário, a iteração é descartada
     },

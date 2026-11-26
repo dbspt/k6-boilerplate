@@ -21,7 +21,7 @@ export const options = {
       startVUs: 0,
       stages: [
         { duration: '15s', target: 10 },   // subida até 10 usuários
-        { duration: '30s', target: 10 },   // patamar
+        { duration: '20s', target: 10 },   // patamar
         { duration: '15s', target: 0 },    // descida
       ],
       gracefulRampDown: '10s', // tempo para terminar a iteração em andamento na descida
